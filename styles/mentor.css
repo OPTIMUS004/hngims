@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+html, body{
+    padding: 0;
+    margin:0;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+h1 {
+    line-height: 1.5;
+}
+
+
+.form {
+    width: 90%;
+    max-width: 360px;
+    margin: 6rem auto;
+    text-align: center;
+    box-shadow: 0 2px 5px 0px #aaa;
+    padding: 3rem 1.5rem;
+}
+
+.form label {
+    display: block;
+}
+
+.form input {
+    line-height: 36px;
+    margin-bottom: 24px;
+    width: 100%;
+    border: 1px solid slateblue;
+    border-radius: 36px;
+    padding: 0 1rem;
+}
+
+.submit-form {
+    background: slateblue;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 40px !important;
+}
+
+.two-col {
+    display: inline-block !important;
+    width: 49%;
+}
+
+                                                /*********************Intern's Daschboard Starts here*********************************/
+
+.dashboard-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    padding:2.5vh;
+    overflow: auto;
+    background-color: #FBFCFD;
+}
+
+div.mobile-nav{
+    display: block;
+    color: #fff;
+}
+
+#menu, #close{
+    display:block;
+    cursor: pointer;
+}
+
+aside#sidenav{
+    width: 20vw;
+    height: 95vh;
+    padding: 5vh 0;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 1px rgba(185, 184, 184, 0.164);
+}
+aside#sidenav.active{
+    left: 0;
+}
+.top{
+    height: 45vh;
+}
+
+#logo{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#profile{
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px #aaa;
+}
+
+#profile-pic{
+    width: 10em;
+    margin: auto;
+    height: 10em;
+    padding-top:10%;
+    border-radius: 50%;
+}
+
+#profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#profile span{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#dashboard-ops{
+    height: 45vh;
+}
+
+
+#dashboard-ops ul li{
+    display: block;
+    width: 100%;
+    list-style: none;
+    line-height: 2.5em;
+}
+
+#dashboard-ops ul li i{
+    margin: 5%;
+}
+
+.active{
+    background-color: #2196f3;
+    color: #fff; 
+}
+
+#dashboard-ops ul li a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-align: left; 
+}
+
+#dashboard-ops ul li a:hover{
+    background-color: #2196f3;
+    color: #fff;
+}
+
+main{
+    width: 70vw;
+    height: 95vh;
+    margin-left: 5vw;
+    padding: 0 2.5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section#cards{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card{
+    width: 20%;
+    height: 15vh;
+    background-color: #fff;
+    color: #2196f3;
+    margin: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px 1px rgba(185, 184, 184, 0.164);
+}
+.card:hover{
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+}
+span.value, span.card-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+span.value{
+    font-size: 3em;
+}
+
+section#tasklist{
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.task{
+    width: 90%;
+    height: auto;
+   margin: auto;
+    background-color: #fff;
+    padding: .5%;
+    margin:2.5% 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 1px rgba(185, 184, 184, 0.164);
+}
+
+.task-detail{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #2196f3;
+}
+
+.task-detail span{
+    margin: 0 1.5%;
+}
+
+.task-author-avi{
+    width: 3em;
+    height: 100%;
+}
+
+.task-author-avi img{
+    width: 100%;
+    height: 100%;
+}
+
+.task-submission{
+    width: 100%;
+    margin: .5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form[name="task-grade"]{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-submission a{
+    display: block;
+    color: #2196f3;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+form.task-grade button{
+    display: block;
+    background-color: #2196f3;
+    padding: 10%;
+    border: none;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 860px){
+    .dashboard-wrapper{
+        padding: .5%;
+    }
+
+    div.mobile-nav{
+        display: block;
+        color: #fff;
+        position: absolute;
+        right:70px;
+        color: grey;
+    }
+ #profile-pic{
+    width: 8em;
+    height: 9em;
+    
+}
+#sidenav{
+    display: none;
+}
+    aside#sidenav[data-visible= "false"]{
+        position: fixed;  
+        display: none;
+    }
+    #sidenav{
+        min-width: 50%;
+        z-index: 10;
+    }
+
+    #menu,#close{
+        position: absolute;
+        width:100%;
+        background-color: #2196f3;
+        padding: 0 2%;
+    }
+
+    #menu i{
+        color: #fff;
+    }
+
+    main{
+        width: 100vw;
+        margin: 0;    
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    section#cards{
+        justify-content: space-between;
+    }
+
+    .card{
+        width: 30%;
+        margin: 2%;
+    }
+
+    section#tasklist{
+        width: 95%;
+        margin: auto;
+    }
+
+    .task{
+        width: 100%;
+    }
+}
